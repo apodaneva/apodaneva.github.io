@@ -12,17 +12,19 @@
 @import "mixins";
 @import "global/fonts";
 @import "global/reboot";
-@import "global/utils";
+// @import "global/utils";
 @import "global/container";
 
 // Blocks
 // ---------------------------------
 
 @import "blocks/btn";
-@import "blocks/modal";
-@import "blocks/custom-input";
-@import "blocks/custom-toggle";
-@import "blocks/custom-select";
+@import "blocks/header";
+@import "blocks/about";
+@import "blocks/education";
+@import "blocks/articles";
+@import "blocks/teaching";
+@import "blocks/footer";
 
 // ---------------------------------
 

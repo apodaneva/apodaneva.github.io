@@ -1,0 +1,44 @@
+.about {
+  scroll-margin-top: 68px;
+  background-color: $color-white-smoke;
+  // padding-top: 50px;
+}
+
+.about__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+}
+
+.about__photo {
+  padding-top: 30px;
+}
+
+.about__photo-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    margin-bottom: 0;
+  }
+}
+
+.about__biography {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  a {
+    margin: 10px 0;
+    color: blue;
+
+    &:hover,
+    &:focus-within {
+      color: $color-maya-blue;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.education {
+  scroll-margin-top: 68px;
+}
+
+.education__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.education__education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.education__list {
+  li {
+    padding: 10px;
+  }
+  h3 {
+    padding: 0;
+    margin: 0;
+  }
+
+  p {
+    padding: 0 0 0 20px;
+    margin: 0;
+  }
+}
