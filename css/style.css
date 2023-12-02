@@ -491,6 +491,7 @@ main {
 
 a {
   text-decoration: none;
+  color: #000000;
 }
 
 img,
@@ -632,7 +633,7 @@ h3 {
 p {
   padding: 0;
   margin: 5px;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 150%;
 }
@@ -1483,7 +1484,7 @@ p {
 }
 
 .about__photo {
-  background-color: red;
+  margin-top: 20px;
 }
 
 .about__photo-title {
@@ -1518,6 +1519,12 @@ p {
   align-items: center;
 }
 
+.about__biography a {
+  margin: 10px 0;
+  font-size: 18px;
+  color: blue;
+}
+
 .education__wrapper {
   display: -ms-grid;
   display: grid;
@@ -1544,6 +1551,7 @@ p {
 }
 
 .articles {
+  scroll-margin-top: 68px;
   background-color: #f7f7f7;
 }
 
@@ -1568,6 +1576,7 @@ p {
 }
 
 .articles__item {
+  scroll-margin-top: 68px;
   padding: 20px;
   margin-bottom: 10px;
   background: #cccccc;
@@ -1653,6 +1662,10 @@ p {
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
+}
+
+.footer__list-item a {
+  color: #000000;
 }
 
 /* @mixin hover-focus {
