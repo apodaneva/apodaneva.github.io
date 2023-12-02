@@ -1,63 +1,116 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en-us">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
-    <title>ProjectName</title>
+    <title>Alena Podaneva</title>
+    <meta name="author" content="Rudko Iurii">
+    <meta name="description" content="PHD economics">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <header class="header" data-header>
+        <div class="header__wrapper container">
+          <div class="header__menu" data-header-menu>
+            <div class="header__logo">
+              <a href="#">ALENA PODANEVA'S PERSONAL SITE</a>
+            </div>
+            <nav class="header__nav" data-header-nav>
+              <button class="header__nav-toggle btn" type="button" data-header-toggle>
+                <span class="visually-hidden">Open menu.</span>
+              </button>
+              <ul class="header__list" data-header-list>
+                <li class="header__list-item">
+                  <a href="#about">about</a>
+                </li>
+                <li class="header__list-item">
+                  <a href="#education">education</a>
+                </li>
+                <li class="header__list-item">
+                  <a href="#blog">blog</a>
+                </li>
+                <li class="header__list-item">
+                  <a href="#cv">CV</a>
+                </li>
+                <li class="header__list-item">
+                  <a href="#contacts">contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </header>
       <main>
-        <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+        <section class="about" id="about">
+          <div class="about__wrapper container">
+            <div class="about__photo">
+              <picture>
+                <source type="image/webp" srcset="img/about.webp 1x, img/about@2x.webp 2x">
+                <img width="300" height="300" src="img/about.jpg" srcset="img/about@2x.jpg 2x" alt="Alena's photo.">
+              </picture>
+              <div class="about__photo-title">
+                <h2>Alena Podaneva</h2>
+                <h3>Future PhD student.</h3>
+                <p>studying at the University of Luxembourg.</p>
+              </div>
+          </div>
+          <div class="about__biography">
+            <h2>Biography</h2>
+            <p>My name is Alena and I am a student of economics at the University of Luxembourg, one of the leading institutions in Europe for finance and management education. I am passionate about exploring the world and learning new things, especially about medicine and health. I write articles for a British online magazine, where I share my insights and opinions on various topics related to medical research and innovation. I enjoy reading, traveling, and meeting new people. I dream of becoming a successful economist and journalist, and making a positive impact on society.</p>
+          </div>
+        </div>
+        </section>
+        <section class="education" id="education">
+          <div class="education__wrapper container">
+            <div class="education__interests">
+              <h3>Interests</h3>
+              <ul class="education__interests-list">
+                <li>Trustworthy AI</li>
+                <li>Adversarial Machine Learning</li>
+                <li>Large Language Model</li>
+                <li>Deep Learning</li>
+                <li>Information Security</li>
+                <li>Statistics</li>
+              </ul>
+            </div>
+            <div class="education__education">
+              <h3>Education</h3>
+              <ul class="about__education-list">
+                <li>
+                  <h4>PhD in Economics, 2023</h4>
+                  <p>University of Luxembourg, Luxembourg</p>
+                </li>
+                <li>
+                  <h4>PhD in Economics, 2023</h4>
+                  <p>University of Luxembourg, Luxembourg</p>
+                </li>
+                <li>
+                  <h4>PhD in Economics, 2023</h4>
+                  <p>University of Luxembourg, Luxembourg</p>
+                </li>
+                <li>
+                  <h4>PhD in Economics, 2023</h4>
+                  <p>University of Luxembourg, Luxembourg</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
+        <section class="contacts" id="contacts">
+          <div class="contacts__wrapper container">
+            <div class="education__interests">
+
+            </div>
+          </div>
+        </section>
+
       </main>
       <footer>
-        <div class="container"></div>
+        <div class="container">
+
+        </div>
       </footer>
-    </div>
-
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
