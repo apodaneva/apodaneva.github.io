@@ -17,6 +17,7 @@ $color-cobalt:                      #003eb7;
 $color-alice-blue:                  #f9fbfd;
 $color-maya-blue:                   #78bcfc;
 $color-white-smoke:                 #f7f7f7;
+$color-very-light-grey:             #cccccc;
 $color-tangaroa:                    #011c40;
 
 // Gradient
@@ -67,21 +68,21 @@ $retina-dppx:                       1.5dppx;
 // резиновая верстка
 // desktop
 $padding-desktop: percentage(calc(103 / 1366));
-$blog-item-padding-desktop: percentage(calc(30 / 260));
-$blog-item-padding-desktop: percentage(calc(30 / 260));
-$blog-item-padding-tablet: percentage(calc(35 / 309));
-$blog-item-hover-padding-desktop: percentage(calc(25 / 260));
-$blog-width-mobile: percentage(calc(270 / 300));
+$articles-item-padding-desktop: percentage(calc(30 / 260));
+$articles-item-padding-desktop: percentage(calc(30 / 260));
+$articles-item-padding-tablet: percentage(calc(35 / 309));
+$articles-item-hover-padding-desktop: percentage(calc(25 / 260));
+$articles-width-mobile: percentage(calc(270 / 300));
 $card-height: 386;
-$blog-card-height-desktop: calc(($card-height/1366) * 100vw);
-$blog-card-height-tablet: calc(($card-height/768) * 100vw);
-$blog-card-height-mobile: calc(($card-height/320) * 100vw);
+$articles-card-height-desktop: calc(($card-height/1366) * 100vw);
+$articles-card-height-tablet: calc(($card-height/768) * 100vw);
+$articles-card-height-mobile: calc(($card-height/320) * 100vw);
 $card-width-desktop: 260;
-$blog-card-width-desktop: calc(($card-width-desktop/1366) * 100vw);
+$articles-card-width-desktop: calc(($card-width-desktop/1366) * 100vw);
 $card-width-tablet: 309;
-$blog-card-width-tablet: calc(($card-width-tablet/768) * 100vw);
+$articles-card-width-tablet: calc(($card-width-tablet/768) * 100vw);
 $card-width-mobile: 270;
-$blog-card-width-mobile: calc(($card-width-mobile/320) * 100vw);
+$articles-card-width-mobile: calc(($card-width-mobile/320) * 100vw);
 
 // tablet
 $padding-tablet: percentage(calc(45 / 768));

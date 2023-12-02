@@ -2,7 +2,7 @@
   "name": "rutia-template",
   "version": "2.0.0",
   "type": "module",
-  "description": "start-template",
+  "description": "rutia-template",
   "browserslist": [
     "last 3 versions",
     "IE 11",

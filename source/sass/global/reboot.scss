@@ -44,10 +44,6 @@ main {
   flex: auto;
 }
 
-a {
-  text-decoration: none;
-}
-
 img,
 video {
   display: block;
@@ -65,19 +61,12 @@ ul {
   padding: 0;
 }
 
-// chrome autofill background removal
-// если на проекте у инпутов используются разные цвета фонов\текста -
-// удалите это из глобала и используйте локально с нужными цветами
-// rgba не подойдет, сконвертируйте цвет в hex без прозрачности
-// если в стилях уже используется box-shadow есть другое решение -
-// задать к списку транзишенов `background-color 10000000s ease-out`
 input:-webkit-autofill {
   box-shadow: inset 0 0 0 1000px $color-default-white;
 
   -webkit-text-fill-color: $color-default-black;
 }
 
-// firefox placeholder \ invalid fix + ios bdrs
 input,
 textarea {
   border-radius: 0;
@@ -142,3 +131,75 @@ button,
 [type="submit"] {
   appearance: none;
 }
+
+h1 {
+  padding: 0;
+  margin: 20px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+
+  @include vp-1023 {
+    font-size: 26px;
+  }
+
+  @include vp-767 {
+    font-size: 24px;
+  }
+}
+
+h2 {
+  padding: 0;
+  margin: 20px 0;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  text-transform: uppercase;
+
+  @include vp-1023 {
+    font-size: 26px;
+  }
+
+  @include vp-767 {
+    font-size: 24px;
+  }
+}
+
+h3 {
+  padding: 0;
+  margin: 10px 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+
+  @include vp-1023 {
+    font-size: 16px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+  }
+}
+
+p {
+  padding: 0;
+  margin: 5px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+
+  @include vp-1023 {
+    font-size: 14px;
+  }
+
+  @include vp-767 {
+    font-size: 12px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $color-default-black;
+}
+
+

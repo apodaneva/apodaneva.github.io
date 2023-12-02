@@ -2,9 +2,10 @@
   display: inline-flex;
   vertical-align: baseline;
   padding: 10px 20px;
-  color: $color-default-white;
+  color: $color-default-black;
   background-color: $color-transparent;
-  border: 4px solid $color-default-white;
+  border: 2px solid $color-default-black;
+  border-radius: 4px;
   cursor: pointer;
   user-select: none;
   transition: opacity $trans-default;

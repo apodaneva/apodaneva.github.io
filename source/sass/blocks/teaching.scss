@@ -1,22 +1,15 @@
-.education {
+.teaching {
   scroll-margin-top: 68px;
 }
 
-.education__wrapper {
+.teaching__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.education__education {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.education__list {
+.teaching__list {
   li {
     padding: 10px;
   }
