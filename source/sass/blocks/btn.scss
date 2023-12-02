@@ -1,26 +1,35 @@
 .btn {
   display: inline-flex;
+  vertical-align: baseline;
   padding: 10px 20px;
-
   color: $color-default-white;
-
-  background-color: $color-neon-blue;
-  border: none;
+  background-color: $color-transparent;
+  border: 4px solid $color-default-white;
   cursor: pointer;
-
+  user-select: none;
   transition: opacity $trans-default;
-
-  &--red {
-    background-color: $color-torch-red;
-  }
+  font-family: $font-roboto-sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  align-items: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 
   &:disabled {
     opacity: 0.5;
-
     pointer-events: none;
   }
 
-  @include hover-focus {
-    opacity: 0.8;
+  &:hover {
+    background: linear-gradient(97.05deg, $color-torch-red 17.6%, $color-cobalt 95.31%);
+  }
+
+  &--dark {
+    border: 2px solid $color-sapphire;
+
+    &:hover {
+      color: $color-default-white;
+    }
   }
 }

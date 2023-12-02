@@ -1,0 +1,256 @@
+.header {
+  background: $color-alice-blue;
+  box-shadow: 0 4px 4px $color-transparent-2;
+
+  position: sticky;
+  z-index: 100;
+  top: 0;
+
+  @include vp-1023 {
+    position: relative;
+  }
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.header__logo {
+  min-width: 70px;
+  margin: 0 33px;
+  color: $color-alice-blue;
+
+  @include vp-1023 {
+    min-width: 38px;
+    margin: 0 10px 0 0;
+  }
+
+  @include vp-767 {
+    margin-bottom: 10px;
+  }
+
+  a {
+    display: block;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 125%;
+
+    @include vp-1023 {
+      width: 38px;
+      height: 20px;
+    }
+
+    @include vp-767 {
+      width: 42px;
+      height: 22px;
+    }
+  }
+}
+
+.header__nav {
+  display: flex;
+
+  @include vp-767 {
+    justify-content: flex-end;
+  }
+}
+
+.header__nav-toggle {
+  display: none;
+  position: relative;
+  width: 24px;
+  height: 12px;
+  padding: 10px;
+  background: none;
+  border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $color-alice-blue;
+    box-shadow: 0 6px 0 0 $color-alice-blue, 0 12px 0 0 $color-alice-blue;
+  }
+}
+
+.header__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 15px;
+
+  @include vp-1023 {
+    margin-right: -12px;
+  }
+
+  @include vp-767 {
+    margin: 0;
+  }
+}
+
+.header__list-item {
+  display: flex;
+  align-content: center;
+
+  @include vp-767 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  a {
+    display: inline-flex;
+    vertical-align: baseline;
+    text-transform: uppercase;
+    padding: 9px 15px;
+    margin: 0 2px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+
+    &:hover {
+      color: $color-maya-blue;
+    }
+
+    @include vp-1023 {
+      padding: 3px 10px;
+      font-size: 14px;
+      line-height: 122%;
+    }
+
+    @include vp-767 {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      font-size: 18px;
+      padding: 10px 8px 8px;
+    }
+  }
+}
+
+// [data-header].is-js {
+//   @include vp-767 {
+//     .header__wrapper {
+//       flex-direction: row;
+//       padding: 20px clamp(15px, $padding-mobile, 30px) 177px;
+//     }
+
+//     .header__nav-toggle {
+//       display: block;
+//       margin-top: 4px;
+//     }
+
+//     .header__list {
+//       display: none;
+//     }
+
+//     .header-promo {
+//       padding: 124px 0 0;
+//     }
+
+//     h1,
+//     p {
+//       text-shadow: none;
+//     }
+//   }
+// }
+
+// [data-header].is-open {
+//   @include vp-767 {
+//     position: relative;
+//     min-height: 500px;
+
+//     &::before {
+//       content: attr(data-header-before);
+//       position: absolute;
+//       width: 100%;
+//       height: 100vh;
+//       background-color: $color-transparent;
+//     }
+
+//     .header__menu {
+//       position: absolute;
+//       right: 0;
+//       top: 0;
+//       width: $header-width-mobile-2;
+//       height: 100vh;
+//       box-sizing: border-box;
+//       margin: 0 0 0 auto;
+//       padding: 20px 11px 11px 0;
+//       background: $color-alice-blue;
+//       align-items: flex-start;
+//       justify-content: flex-start;
+//       flex-direction: column;
+//       overflow-y: auto;
+//     }
+
+//     .header__logo {
+//       margin-left: 15px;
+//     }
+
+//     svg {
+//       color: $color-tangaroa;
+//     }
+
+//     .header__nav {
+//       position: relative;
+//       width: 100%;
+//       padding-left: 15px;
+//     }
+
+//     .header__nav-toggle {
+//       position: absolute;
+//       top: -35px;
+//       right: 0;
+//       width: 20px;
+
+//       &::before,
+//       &::after {
+//         content: "";
+//         position: absolute;
+//         top: 9px;
+//         left: 1px;
+//         width: 18px;
+//         height: 2px;
+//         background-color: $color-tangaroa;
+//       }
+
+//       &::before {
+//         transform: rotate(45deg);
+//         box-shadow: none;
+//       }
+
+//       &::after {
+//         transform: rotate(-45deg);
+//       }
+//     }
+
+//     .header__list {
+//       display: flex;
+//       flex-direction: column;
+//       flex: auto;
+//       margin: 24px 0 0 0;
+//     }
+
+//     a {
+//       justify-content: flex-start;
+//       color: $color-tangaroa;
+
+//       &:hover {
+//         color: $color-maya-blue;
+//       }
+//     }
+
+//     .header__promo {
+//       @include visually-hidden;
+//     }
+//   }
+// }

@@ -6,12 +6,18 @@
 $color-default-black:               #000000;
 $color-default-white:               #ffffff;
 $color-transparent:                 rgba(255, 255, 255, 0);
+$color-transparent-4:               rgba(1, 28, 64, 0);
 
 // Project palette
-// для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
-
 $color-neon-blue:                   #2c39f2;
 $color-torch-red:                   #ff1553;
+$color-transparent-2:               rgba(120, 188, 252, 0.25);
+$color-sapphire:                    #102654;
+$color-cobalt:                      #003eb7;
+$color-alice-blue:                  #f9fbfd;
+$color-maya-blue:                   #78bcfc;
+$color-white-smoke:                 #f7f7f7;
+$color-tangaroa:                    #011c40;
 
 // Gradient
 
@@ -47,7 +53,7 @@ $vp-320:                            320px;
 $vp-375:                            375px;
 $vp-768:                            768px;
 $vp-1024:                           1024px;
-$vp-1280:                           1280px;
+$vp-1200:                           1200px;
 $vp-1440:                           1440px;
 $vp-1920:                           1920px;
 
@@ -56,3 +62,29 @@ $vp-1920:                           1920px;
 
 $retina-dpi:                        144dpi;
 $retina-dppx:                       1.5dppx;
+
+
+// резиновая верстка
+// desktop
+$padding-desktop: percentage(calc(103 / 1366));
+$blog-item-padding-desktop: percentage(calc(30 / 260));
+$blog-item-padding-desktop: percentage(calc(30 / 260));
+$blog-item-padding-tablet: percentage(calc(35 / 309));
+$blog-item-hover-padding-desktop: percentage(calc(25 / 260));
+$blog-width-mobile: percentage(calc(270 / 300));
+$card-height: 386;
+$blog-card-height-desktop: calc(($card-height/1366) * 100vw);
+$blog-card-height-tablet: calc(($card-height/768) * 100vw);
+$blog-card-height-mobile: calc(($card-height/320) * 100vw);
+$card-width-desktop: 260;
+$blog-card-width-desktop: calc(($card-width-desktop/1366) * 100vw);
+$card-width-tablet: 309;
+$blog-card-width-tablet: calc(($card-width-tablet/768) * 100vw);
+$card-width-mobile: 270;
+$blog-card-width-mobile: calc(($card-width-mobile/320) * 100vw);
+
+// tablet
+$padding-tablet: percentage(calc(45 / 768));
+
+// mobile
+$padding-mobile: percentage(calc(15 / 320));

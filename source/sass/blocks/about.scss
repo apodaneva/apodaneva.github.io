@@ -1,0 +1,29 @@
+.about {
+  scroll-margin-top: 68px;
+  background-color: $color-white-smoke;
+  // padding-top: 50px;
+}
+
+.about__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+}
+
+.about__photo {
+  background-color: red;
+}
+
+.about__photo-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__biography {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

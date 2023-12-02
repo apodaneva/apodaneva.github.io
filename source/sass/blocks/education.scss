@@ -1,0 +1,13 @@
+.education__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.education__interests,
+.education__education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
