@@ -1510,6 +1510,257 @@ button,
   justify-content: center;
 }
 
+.blog__wrapper {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 85px clamp(30px, 7.5402635432%, 103px) 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.blog__wrapper h2 {
+  padding: 0;
+  margin: 0 0 49px 0;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+}
+
+.blog__list {
+  margin: 0;
+  padding: 0 15px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (23%)[4];
+  grid-template-columns: repeat(4, 23%);
+  -webkit-column-gap: 2.65%;
+  -moz-column-gap: 2.65%;
+  column-gap: 2.65%;
+  row-gap: 30px;
+}
+
+.blog__item {
+  padding: 23px clamp(5px, 11.5384615385%, 30px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  width: clamp(190px, 19.0336749634vw, 260px);
+  height: clamp(280px, 28.2576866764vw, 386px);
+  background-color: #78bcfc;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  position: relative;
+}
+
+.blog__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011c40));
+  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011c40 100%);
+}
+
+.blog__item:hover,
+.blog__item:focus-within {
+  padding: 28px clamp(5px, 9.6153846154%, 30px) 35px;
+  background: #011c40;
+  -webkit-box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
+  box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.blog__item:hover::before,
+.blog__item:focus-within::before {
+  display: none;
+}
+
+.blog__item:hover h3,
+.blog__item:focus-within h3 {
+  margin-bottom: 14px;
+}
+
+.blog__item:hover .blog__item-info,
+.blog__item:focus-within .blog__item-info {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  white-space: normal;
+  clip: auto;
+  -webkit-clip-path: initial;
+  clip-path: initial;
+  height: 282px;
+  overflow: auto;
+  max-width: 100%;
+}
+
+.blog__item:hover .blog__item-list,
+.blog__item:focus-within .blog__item-list {
+  -webkit-box-flex: 1;
+  -ms-flex: auto;
+  flex: auto;
+}
+
+.blog__item:hover a,
+.blog__item:focus-within a {
+  visibility: visible;
+}
+
+.blog__item h3 {
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #f9fbfd;
+  position: relative;
+  z-index: 999;
+}
+
+.blog__item--astoria {
+  background-image: -webkit-image-set(url("../img/blog/cruise-1-1.webp") 1x, url("../img/blog/cruise-1-1.jpg") 1x, url("../img/blog/cruise-1-1@2x.webp") 2x, url("../img/blog/cruise-1-1@2x.jpg") 2x);
+  background-image: image-set("../img/blog/cruise-1-1.webp" 1x, "../img/blog/cruise-1-1.jpg" 1x, "../img/blog/cruise-1-1@2x.webp" 2x, "../img/blog/cruise-1-1@2x.jpg" 2x);
+}
+
+.blog__item--eline {
+  background-image: -webkit-image-set(url("../img/blog/cruise-2-1.webp") 1x, url("../img/blog/cruise-2-1.jpg") 1x, url("../img/blog/cruise-2-1@2x.webp") 2x, url("../img/blog/cruise-2-1@2x.jpg") 2x);
+  background-image: image-set("../img/blog/cruise-2-1.webp" 1x, "../img/blog/cruise-2-1.jpg" 1x, "../img/blog/cruise-2-1@2x.webp" 2x, "../img/blog/cruise-2-1@2x.jpg" 2x);
+}
+
+.blog__item--atlantis {
+  background-image: -webkit-image-set(url("../img/blog/cruise-3-1.webp") 1x, url("../img/blog/cruise-3-1.jpg") 1x, url("../img/blog/cruise-3-1@2x.webp") 2x, url("../img/blog/cruise-3-1@2x.jpg") 2x);
+  background-image: image-set("../img/blog/cruise-3-1.webp" 1x, "../img/blog/cruise-3-1.jpg" 1x, "../img/blog/cruise-3-1@2x.webp" 2x, "../img/blog/cruise-3-1@2x.jpg" 2x);
+}
+
+.blog__item--odissey {
+  background-image: -webkit-image-set(url("../img/blog/cruise-4-1.webp") 1x, url("../img/blog/cruise-4-1.jpg") 1x, url("../img/blog/cruise-4-1@2x.webp") 2x, url("../img/blog/cruise-4-1@2x.jpg") 2x);
+  background-image: image-set("../img/blog/cruise-4-1.webp" 1x, "../img/blog/cruise-4-1.jpg" 1x, "../img/blog/cruise-4-1@2x.webp" 2x, "../img/blog/cruise-4-1@2x.jpg" 2x);
+}
+
+.blog__item--olympia {
+  background-image: -webkit-image-set(url("../img/blog/cruise-5-1.webp") 1x, url("../img/blog/cruise-5-1.jpg") 1x, url("../img/blog/cruise-5-1@2x.webp") 2x, url("../img/blog/cruise-5-1@2x.jpg") 2x);
+  background-image: image-set("../img/blog/cruise-5-1.webp" 1x, "../img/blog/cruise-5-1.jpg" 1x, "../img/blog/cruise-5-1@2x.webp" 2x, "../img/blog/cruise-5-1@2x.jpg" 2x);
+}
+
+.blog__item--aurora {
+  background-image: -webkit-image-set(url("../img/blog/cruise-6-1.webp") 1x, url("../img/blog/cruise-6-1.jpg") 1x, url("../img/blog/cruise-6-1@2x.webp") 2x, url("../img/blog/cruise-6-1@2x.jpg") 2x);
+  background-image: image-set("../img/blog/cruise-6-1.webp" 1x, "../img/blog/cruise-6-1.jpg" 1x, "../img/blog/cruise-6-1@2x.webp" 2x, "../img/blog/cruise-6-1@2x.jpg" 2x);
+}
+
+.blog__item--leonor {
+  background-image: -webkit-image-set(url("../img/blog/cruise-7-1.webp") 1x, url("../img/blog/cruise-7-1.jpg") 1x, url("../img/blog/cruise-7-1@2x.webp") 2x, url("../img/blog/cruise-7-1@2x.jpg") 2x);
+  background-image: image-set("../img/blog/cruise-7-1.webp" 1x, "../img/blog/cruise-7-1.jpg" 1x, "../img/blog/cruise-7-1@2x.webp" 2x, "../img/blog/cruise-7-1@2x.jpg" 2x);
+}
+
+.blog__item--minion-1 {
+  background-image: -webkit-image-set(url("../img/blog/cruise-8-1.webp") 1x, url("../img/blog/cruise-8-1.jpg") 1x, url("../img/blog/cruise-8-1@2x.webp") 2x, url("../img/blog/cruise-8-1@2x.jpg") 2x);
+  background-image: image-set("../img/blog/cruise-8-1.webp" 1x, "../img/blog/cruise-8-1.jpg" 1x, "../img/blog/cruise-8-1@2x.webp" 2x, "../img/blog/cruise-8-1@2x.jpg" 2x);
+}
+
+.blog__item-info {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -ms-flex: auto;
+  flex: auto;
+  color: #f9fbfd;
+}
+
+.blog__item-info h4 {
+  padding: 0;
+  margin: 0 0 2px 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.blog__item-info p {
+  padding: 0;
+  margin: 0 0 12px 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  word-wrap: break-word;
+}
+
+.blog__item-info a {
+  visibility: visible;
+  outline-offset: -2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  padding: 9px 46px 10px 47px;
+  margin: 0;
+  background-color: #f9fbfd;
+  color: #011c40;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.blog__item-list {
+  padding: 0;
+  margin: 0;
+}
+
+.blog__item-list h5 {
+  padding: 0;
+  margin: 0 0 2px 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.blog__item-list p {
+  padding: 0;
+  margin: 0 0 11px 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1579,6 +1830,74 @@ button,
     font-size: 14px;
     line-height: 122%;
   }
+
+  .blog__wrapper {
+    padding: 90px clamp(10px, 5.859375%, 45px) 100px;
+  }
+
+  .blog__wrapper h2 {
+    font-size: 26px;
+  }
+
+  .blog__list {
+    -ms-grid-columns: (47.7%)[2];
+    grid-template-columns: repeat(2, 47.7%);
+    -webkit-column-gap: 4.6%;
+    -moz-column-gap: 4.6%;
+    column-gap: 4.6%;
+  }
+
+  .blog__item {
+    width: clamp(309px, 40.234375vw, 420px);
+    height: clamp(386px, 50.2604166667vw, 520px);
+    padding: 23px clamp(5px, 11.5384615385%, 35px) 28px;
+  }
+
+  .blog__item:hover {
+    padding: 28px clamp(5px, 11.3268608414%, 38px) 35px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .blog__item--astoria {
+    background-image: -webkit-image-set(url("../img/blog/cruise-1-2.webp") 1x, url("../img/blog/cruise-1-2.jpg") 1x, url("../img/blog/cruise-1-2@2x.webp") 2x, url("../img/blog/cruise-1-2@2x.jpg") 2x);
+    background-image: image-set("../img/blog/cruise-1-2.webp" 1x, "../img/blog/cruise-1-2.jpg" 1x, "../img/blog/cruise-1-2@2x.webp" 2x, "../img/blog/cruise-1-2@2x.jpg" 2x);
+  }
+
+  .blog__item--eline {
+    background-image: -webkit-image-set(url("../img/blog/cruise-2-2.webp") 1x, url("../img/blog/cruise-2-2.jpg") 1x, url("../img/blog/cruise-2-2@2x.webp") 2x, url("../img/blog/cruise-2-2@2x.jpg") 2x);
+    background-image: image-set("../img/blog/cruise-2-2.webp" 1x, "../img/blog/cruise-2-2.jpg" 1x, "../img/blog/cruise-2-2@2x.webp" 2x, "../img/blog/cruise-2-2@2x.jpg" 2x);
+  }
+
+  .blog__item--atlantis {
+    background-image: -webkit-image-set(url("../img/blog/cruise-3-2.webp") 1x, url("../img/blog/cruise-3-2.jpg") 1x, url("../img/blog/cruise-3-2@2x.webp") 2x, url("../img/blog/cruise-3-2@2x.jpg") 2x);
+    background-image: image-set("../img/blog/cruise-3-2.webp" 1x, "../img/blog/cruise-3-2.jpg" 1x, "../img/blog/cruise-3-2@2x.webp" 2x, "../img/blog/cruise-3-2@2x.jpg" 2x);
+  }
+
+  .blog__item--odissey {
+    background-image: -webkit-image-set(url("../img/blog/cruise-4-2.webp") 1x, url("../img/blog/cruise-4-2.jpg") 1x, url("../img/blog/cruise-4-2@2x.webp") 2x, url("../img/blog/cruise-4-2@2x.jpg") 2x);
+    background-image: image-set("../img/blog/cruise-4-2.webp" 1x, "../img/blog/cruise-4-2.jpg" 1x, "../img/blog/cruise-4-2@2x.webp" 2x, "../img/blog/cruise-4-2@2x.jpg" 2x);
+  }
+
+  .blog__item--olympia {
+    background-image: -webkit-image-set(url("../img/blog/cruise-5-2.webp") 1x, url("../img/blog/cruise-5-2.jpg") 1x, url("../img/blog/cruise-5-2@2x.webp") 2x, url("../img/blog/cruise-5-2@2x.jpg") 2x);
+    background-image: image-set("../img/blog/cruise-5-2.webp" 1x, "../img/blog/cruise-5-2.jpg" 1x, "../img/blog/cruise-5-2@2x.webp" 2x, "../img/blog/cruise-5-2@2x.jpg" 2x);
+  }
+
+  .blog__item--aurora {
+    background-image: -webkit-image-set(url("../img/blog/cruise-6-2.webp") 1x, url("../img/blog/cruise-6-2.jpg") 1x, url("../img/blog/cruise-6-2@2x.webp") 2x, url("../img/blog/cruise-6-2@2x.jpg") 2x);
+    background-image: image-set("../img/blog/cruise-6-2.webp" 1x, "../img/blog/cruise-6-2.jpg" 1x, "../img/blog/cruise-6-2@2x.webp" 2x, "../img/blog/cruise-6-2@2x.jpg" 2x);
+  }
+
+  .blog__item--leonor {
+    background-image: -webkit-image-set(url("../img/blog/cruise-7-2.webp") 1x, url("../img/blog/cruise-7-2.jpg") 1x, url("../img/blog/cruise-7-2@2x.webp") 2x, url("../img/blog/cruise-7-2@2x.jpg") 2x);
+    background-image: image-set("../img/blog/cruise-7-2.webp" 1x, "../img/blog/cruise-7-2.jpg" 1x, "../img/blog/cruise-7-2@2x.webp" 2x, "../img/blog/cruise-7-2@2x.jpg" 2x);
+  }
+
+  .blog__item--minion-1 {
+    background-image: -webkit-image-set(url("../img/blog/cruise-8-2.webp") 1x, url("../img/blog/cruise-8-2.jpg") 1x, url("../img/blog/cruise-8-2@2x.webp") 2x, url("../img/blog/cruise-8-2@2x.jpg") 2x);
+    background-image: image-set("../img/blog/cruise-8-2.webp" 1x, "../img/blog/cruise-8-2.jpg" 1x, "../img/blog/cruise-8-2@2x.webp" 2x, "../img/blog/cruise-8-2@2x.jpg" 2x);
+  }
 }
 
 @media (max-width: 767px) {
@@ -1643,6 +1962,77 @@ button,
     width: 100%;
     font-size: 18px;
     padding: 10px 8px 8px;
+  }
+
+  .blog__wrapper {
+    padding: 57px clamp(15px, 4.6875%, 30px) 65px;
+  }
+
+  .blog__wrapper h2 {
+    margin: 0 0 30px 0;
+    font-size: 24px;
+  }
+
+  .blog__list {
+    padding: 0 10px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .blog__item {
+    max-width: 500px;
+    width: clamp(270px, 84.375vw, 500px);
+    height: clamp(386px, 120.625vw, 715px);
+    padding: 25px 25px 17px;
+    margin: 0 auto;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+
+  .blog__item:hover {
+    padding: 29px 25px 35px;
+  }
+
+  .blog__item--astoria {
+    background-image: -webkit-image-set(url("../img/blog/cruise-1-3.webp") 1x, url("../img/blog/cruise-1-3.jpg") 1x, url("../img/blog/cruise-1-3@2x.webp") 2x, url("../img/blog/cruise-1-3@2x.jpg") 2x);
+    background-image: image-set("../img/blog/cruise-1-3.webp" 1x, "../img/blog/cruise-1-3.jpg" 1x, "../img/blog/cruise-1-3@2x.webp" 2x, "../img/blog/cruise-1-3@2x.jpg" 2x);
+  }
+
+  .blog__item--eline {
+    background-image: -webkit-image-set(url("../img/blog/cruise-2-3.webp") 1x, url("../img/blog/cruise-2-3.jpg") 1x, url("../img/blog/cruise-2-3@2x.webp") 2x, url("../img/blog/cruise-2-3@2x.jpg") 2x);
+    background-image: image-set("../img/blog/cruise-2-3.webp" 1x, "../img/blog/cruise-2-3.jpg" 1x, "../img/blog/cruise-2-3@2x.webp" 2x, "../img/blog/cruise-2-3@2x.jpg" 2x);
+  }
+
+  .blog__item--atlantis {
+    background-image: -webkit-image-set(url("../img/blog/cruise-3-3.webp") 1x, url("../img/blog/cruise-3-3.jpg") 1x, url("../img/blog/cruise-3-3@2x.webp") 2x, url("../img/blog/cruise-3-3@2x.jpg") 2x);
+    background-image: image-set("../img/blog/cruise-3-3.webp" 1x, "../img/blog/cruise-3-3.jpg" 1x, "../img/blog/cruise-3-3@2x.webp" 2x, "../img/blog/cruise-3-3@2x.jpg" 2x);
+  }
+
+  .blog__item--odissey {
+    background-image: -webkit-image-set(url("../img/blog/cruise-4-3.webp") 1x, url("../img/blog/cruise-4-3.jpg") 1x, url("../img/blog/cruise-4-3@2x.webp") 2x, url("../img/blog/cruise-4-3@2x.jpg") 2x);
+    background-image: image-set("../img/blog/cruise-4-3.webp" 1x, "../img/blog/cruise-4-3.jpg" 1x, "../img/blog/cruise-4-3@2x.webp" 2x, "../img/blog/cruise-4-3@2x.jpg" 2x);
+  }
+
+  .blog__item--olympia {
+    background-image: -webkit-image-set(url("../img/blog/cruise-5-3.webp") 1x, url("../img/blog/cruise-5-3.jpg") 1x, url("../img/blog/cruise-5-3@2x.webp") 2x, url("../img/blog/cruise-5-3@2x.jpg") 2x);
+    background-image: image-set("../img/blog/cruise-5-3.webp" 1x, "../img/blog/cruise-5-3.jpg" 1x, "../img/blog/cruise-5-3@2x.webp" 2x, "../img/blog/cruise-5-3@2x.jpg" 2x);
+  }
+
+  .blog__item--aurora {
+    background-image: -webkit-image-set(url("../img/blog/cruise-6-3.webp") 1x, url("../img/blog/cruise-6-3.jpg") 1x, url("../img/blog/cruise-6-3@2x.webp") 2x, url("../img/blog/cruise-6-3@2x.jpg") 2x);
+    background-image: image-set("../img/blog/cruise-6-3.webp" 1x, "../img/blog/cruise-6-3.jpg" 1x, "../img/blog/cruise-6-3@2x.webp" 2x, "../img/blog/cruise-6-3@2x.jpg" 2x);
+  }
+
+  .blog__item--leonor {
+    background-image: -webkit-image-set(url("../img/blog/cruise-7-3.webp") 1x, url("../img/blog/cruise-7-3.jpg") 1x, url("../img/blog/cruise-7-3@2x.webp") 2x, url("../img/blog/cruise-7-3@2x.jpg") 2x);
+    background-image: image-set("../img/blog/cruise-7-3.webp" 1x, "../img/blog/cruise-7-3.jpg" 1x, "../img/blog/cruise-7-3@2x.webp" 2x, "../img/blog/cruise-7-3@2x.jpg" 2x);
+  }
+
+  .blog__item--minion-1 {
+    background-image: -webkit-image-set(url("../img/blog/cruise-8-3.webp") 1x, url("../img/blog/cruise-8-3.jpg") 1x, url("../img/blog/cruise-8-3@2x.webp") 2x, url("../img/blog/cruise-8-3@2x.jpg") 2x);
+    background-image: image-set("../img/blog/cruise-8-3.webp" 1x, "../img/blog/cruise-8-3.jpg" 1x, "../img/blog/cruise-8-3@2x.webp" 2x, "../img/blog/cruise-8-3@2x.jpg" 2x);
   }
 }
 
