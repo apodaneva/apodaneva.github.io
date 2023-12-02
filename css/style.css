@@ -1543,6 +1543,10 @@ p {
   justify-content: center;
 }
 
+.articles {
+  background-color: #f7f7f7;
+}
+
 .articles__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1566,12 +1570,12 @@ p {
 .articles__item {
   padding: 20px;
   margin-bottom: 10px;
-  background-color: #f7f7f7;
+  background: #cccccc;
 }
 
 .articles__item:hover,
 .articles__item:focus-within {
-  background: #cccccc;
+  background: #ffffff;
 }
 
 .articles__item a {
