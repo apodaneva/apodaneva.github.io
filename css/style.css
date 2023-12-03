@@ -687,7 +687,6 @@ a {
 }
 
 .header__logo {
-  min-width: 70px;
   margin: 0 20px 0 0;
 }
 
@@ -1026,6 +1025,97 @@ a {
   left: -30px;
 }
 
+.talks {
+  scroll-margin-top: 68px;
+  background-color: #f7f7f7;
+}
+
+.talks__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.talks__list li {
+  padding: 10px;
+  position: relative;
+  padding-left: 40px;
+}
+
+.talks__list h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.talks__list p {
+  padding: 0 0 0 20px;
+  margin: 0;
+}
+
+.talks__list svg {
+  position: absolute;
+  top: 10px;
+  left: -30px;
+}
+
+.references {
+  scroll-margin-top: 68px;
+}
+
+.references__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.references__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.references__list li {
+  padding: 10px;
+  position: relative;
+  padding-left: 40px;
+}
+
+.references__list h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.references__list p {
+  padding: 0 0 0 20px;
+  margin: 0;
+}
+
 .footer {
   background-color: #f7f7f7;
 }
@@ -1199,7 +1289,6 @@ a {
   }
 
   .header__logo {
-    min-width: 38px;
     margin: 0 10px 0 0;
   }
 
@@ -1218,6 +1307,10 @@ a {
 
   .teaching__list svg {
     top: 10px;
+  }
+
+  .talks__list svg {
+    top: 5px;
   }
 
   .footer__social {
@@ -1492,6 +1585,18 @@ a {
 
   .teaching__list svg {
     left: -10px;
+  }
+
+  .talks {
+    scroll-margin-top: 0;
+  }
+
+  .talks__list svg {
+    left: -10px;
+  }
+
+  .references {
+    scroll-margin-top: 0;
   }
 
   .footer__list {
