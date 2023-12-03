@@ -1,21 +1,37 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-
 window.addEventListener('DOMContentLoaded', () => {
 
-  // Utils
-  // ---------------------------------
+  // mobile-menu
+  let html = document.querySelector('[data-html]');
+  let header = document.querySelector('[data-header]');
+  let menuToggle = document.querySelector('[data-header-toggle]');
+  let headerList = document.querySelector('[data-header-list]');
 
-  iosVhFix();
+  header.classList.add('is-js');
+  html.style.setProperty('overflow-y', 'auto');
 
-  // Modules
-  // ---------------------------------
+  const menuChanger = () => {
+    header.classList.toggle('is-open');
+    if (html.style.getPropertyValue('overflow-y') === 'auto') {
+      html.style.setProperty('overflow-y', 'hidden');
+    } else {
+      html.style.setProperty('overflow-y', 'auto');
+    }
+  };
 
-  window.addEventListener('load', () => {
-    initModals();
-    const form = new Form();
-    window.form = form;
-    form.init();
+  menuToggle.onclick = () => {
+    menuChanger();
+  };
+
+  header.addEventListener('click', (e) => {
+    if (e.target === header && header.classList.contains('is-open')) {
+      menuChanger();
+    }
   });
+
+  headerList.onclick = () => {
+    header.classList.remove('is-open');
+    html.style.setProperty('overflow-y', 'auto');
+  };
 });
 
 // ---------------------------------

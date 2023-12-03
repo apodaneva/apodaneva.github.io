@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us" data-html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alena Podaneva</title>
     <meta name="author" content="Rudko Iurii">
-    <meta name="description" content="PHD economics">
+    <meta name="description" content="Alena Podaneva PHD economics">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -14,10 +14,14 @@
       <div class="header__wrapper container">
         <div class="header__menu" data-header-menu>
           <div class="header__logo">
-            <a href="#">ALENA PODANEVA'S PERSONAL SITE</a>
+            <a href="#">
+              <picture>
+                <img src="img/svg/main-logo.svg" width="325" height="47" alt="Logo Alena.">
+              </picture>
+            </a>
           </div>
           <nav class="header__nav" data-header-nav>
-            <button class="header__nav-toggle btn" type="button" data-header-toggle>
+            <button class="header__nav-toggle" type="button" data-header-toggle>
               <span class="visually-hidden">Open menu.</span>
             </button>
             <ul class="header__list" data-header-list>
@@ -28,7 +32,7 @@
                 <a href="#education">education</a>
               </li>
               <li class="header__list-item">
-                <a href="#articles">aricles</a>
+                <a href="#articles">articles</a>
               </li>
               <li class="header__list-item">
                 <a href="#teaching">teaching</a>
@@ -46,9 +50,8 @@
         <div class="about__wrapper container">
           <div class="about__photo">
             <picture>
-              <!-- <source type="image/webp" srcset="img/alena_main.webp 1x, img/alena_main@2x.webp 2x"> -->
-              <img width="600" height="525" src="img/alena_main.jpg" alt="Alena's photo.">
-              <!-- srcset="img/alena_main@2x.jpg 2x" -->
+              <source type="image/webp" srcset="img/alena-main.webp 1x, img/alena-main@2x.webp 2x">
+              <img width="600" height="525" src="img/alena-main.jpg" alt="Alena's photo." srcset="img/alena-main@2x.jpg 2x">
             </picture>
             <div class="about__photo-title">
               <h2>Alena Podaneva</h2>
@@ -61,7 +64,7 @@
           <p>I&nbsp;am a&nbsp;fourth-year Ph.D. candidate in&nbsp;Economics at&nbsp;the University of&nbsp;Luxembourg. My&nbsp;research interests center on&nbsp;Public and Health Economics. My&nbsp;Ph.D. thesis broadly focuses on&nbsp;the procurement of&nbsp;hospitals and facility management services within the&nbsp;UK.</p>
           <p>My&nbsp;first paper, <a href="#article1">&laquo;Facility Management Services in&nbsp;UK hospitals: in-house or&nbsp;outsourcing&raquo;</a>, co-authored with my&nbsp;supervisor Prof. Picard, explores contract theory, specifically analyzing the&nbsp;UK government&rsquo;s procurement choices for hospitals.</p>
           <p>In&nbsp;collaboration with Dr. Monastyrenko, my&nbsp;second paper, <a href="#article2"> &laquo;The impact of&nbsp;Public-Private Partnership on&nbsp;Facility Management Costs: evidence from healthcare in&nbsp;England&raquo;</a>, presents an&nbsp;empirical study investigating the impact of&nbsp;procurement type on&nbsp;hospital facility management service costs in&nbsp;England. Throughout this project, I&rsquo;ve applied a&nbsp;diverse range of&nbsp;econometric analytical tools, including 2SLS, fixed effects, PSM, Hausman-Taylor, machine learning techniques, and rigorous robustness checks using panel data.</p>
-          <p>My&nbsp;solo-authored third paper,<a href="#article3">&laquo;Monitoring Intensity against Fees: striking the right balance&raquo;</a>, delves into game theory and contract theory, where&nbsp;I search for a&nbsp;relational contract determining an&nbsp;optimal fee-to-bonus ratio in&nbsp;outsourcing contracts within the healthcare sector.</p>
+          <p>My&nbsp;solo-authored third paper, <a href="#article3">&laquo;Monitoring Intensity against Fees: striking the right balance&raquo;</a>, delves into game theory and contract theory, where&nbsp;I search for a&nbsp;relational contract determining an&nbsp;optimal fee-to-bonus ratio in&nbsp;outsourcing contracts within the healthcare sector.</p>
           <a class="btn" href="files/podaneva_alena_cv.pdf" download> Download my CV</a>
         </div>
       </div>
@@ -73,62 +76,81 @@
             <li>
               <h3>PhD in Economics, 2024</h3>
               <p>University of Luxembourg, Luxembourg</p>
+              <svg aria-hidden="true" role="img" focusable="false" width="50" height="50" viewBox="0 0 32 32">
+                <use href="img/svg/sprite.svg#education"></use>
+              </svg>
             </li>
             <li>
               <h3>Master in Economics and Finance: Research Track, 2019</h3>
               <p>University of Luxembourg, Luxembourg</p>
+              <svg aria-hidden="true" role="img" focusable="false" width="50" height="50" viewBox="0 0 32 32">
+                <use href="img/svg/sprite.svg#education"></use>
+              </svg>
             </li>
             <li>
               <h3>Master in Financial Engineering, 2019</h3>
               <p>Higher School of Economics, Russia</p>
+              <svg aria-hidden="true" role="img" focusable="false" width="50" height="50" viewBox="0 0 32 32">
+                <use href="img/svg/sprite.svg#education"></use>
+              </svg>
             </li>
             <li>
               <h3>Bachelor of Arts in International Affairs and World Economy, 2017</h3>
               <p>Higher School of Economics, Russia</p>
+              <svg aria-hidden="true" role="img" focusable="false" width="50" height="50" viewBox="0 0 32 32">
+                <use href="img/svg/sprite.svg#education"></use>
+              </svg>
             </li>
           </ul>
         </div>
       </section>
       <section class="articles" id="articles">
         <div class="articles__wrapper container">
-          <h2>articles</h2>
+          <h2>working papers</h2>
           <ul class="articles__list">
             <li class="articles__item" id="article1">
-              <h3>Facility Management Services in UK hospitals: in-house or outsourcing</h3>
-              <p>Some small text about article</p>
-              <p>Some small text about article</p>
-              <a class="btn" href="article1.html">Read full</a>
+              <h3>Facility Management Services in&nbsp;UK hospitals: in-house or&nbsp;outsourcing</h3>
+              <p>This paper studies the institutional organization of&nbsp;UK hospitals through traditional procurement and Private Finance Initiatives (PFI). It&nbsp;first describes the&nbsp;UK hospital sector with hard facility management (FM) services (e.g., building maintenance, etc.) and soft facility management (FM) services (e.g., catering, cleaning, etc.) that can be&nbsp;supplied in-house or&nbsp;outsourced. Builders are also bound to&nbsp;provide a&nbsp;partial warranty against construction risk. The paper then shows that a&nbsp;PFI internalizes the externality between builders and hard&nbsp;FM service suppliers. It&nbsp;also requires paying a&nbsp;risk premium that can become too high under strong hard&nbsp;FM risk. The builder&rsquo;s warranty creates a&nbsp;reverse moral hazard in&nbsp;traditional procurement, which becomes stronger for higher hard&nbsp;FM risk. Traditional procurement provides no&nbsp;incentive to&nbsp;outsource facility management services, whereas a&nbsp;PFI offers incentives for soft&nbsp;FM services. A&nbsp;PFI procurement is&nbsp;shown to&nbsp;be&nbsp;optimal for small enough and high enough hard&nbsp;FM risk.</p>
+              <a class="btn" href="facility-management-services.html">read full article</a>
             </li>
             <li class="articles__item" id="article2">
               <h3>The impact of Public-Private Partnership on Facility Management Costs: evidence from healthcare in England</h3>
-              <p>Some small text about article</p>
-              <p>Some small text about article</p>
-              <a class="btn" href="#">Read full</a>
+              <p>This study employs the ERIC panel dataset spanning 2018-2021 to evaluate how hospital procurement type (PFI or non-PFI) affects hard and soft facility management costs.</p>
+              <p>Private Finance Initiatives (PFI) represent a form of Public-Private Partnership (PPP) extensively used in England since the 1990s. This study employs the ERIC panel dataset from 2018-2021 to evaluate how hospital procurement type affects hard and soft Facility Management (FM) costs. Employing OLS and 2SLS estimations, followed by propensity score matching and Hausman-Taylor estimations, the findings reveal that PFI is associated with increases in both hard and soft FM costs of up to 37.1% and 20.3%, respectively. This effect is more pronounced for sites with pre-existing buildings before PFI contract signatures, while the trend reverses for soft FM costs. Partial PFI financing is associated with higher costs compared to entirely PFI-procured hospital sites. However, this study suggests the potential for limited cost savings by considering moderate- and low-risk backlog maintenance costs, as well as capital investments in new construction.</p>
+              <a class="btn" href="public-private-partnership.html">read full article</a>
             </li>
             <li class="articles__item" id="article3">
               <h3>Monitoring Intensity against Fees: striking the right balance</h3>
-              <p>Some small text about article</p>
-              <p>Some small text about article</p>
-              <a class="btn" href="#">Read full</a>
+              <p>This study aims to&nbsp;establish how parties can achieve more efficient outcomes by&nbsp;making use of&nbsp;relational contracts (internal enforcement) and monitoring (external enforcement). Specifically, it&nbsp;investigates whether and how monitoring intensity should increase or&nbsp;decrease in&nbsp;response to&nbsp;changes in&nbsp;the fee share when service delivery is&nbsp;unsatisfactory. It&nbsp;analyzes a&nbsp;repeated game with imperfect public monitoring. The parties involved can observe the stochastic benefits that arise from their interactions but cannot verify them. Both the principal&rsquo;s monitoring intensity and agent&rsquo;s efforts are unverifiable and unobservable, leading to&nbsp;a&nbsp;double moral hazard problem. It&nbsp;searches for an&nbsp;optimal relational contract, solving the game in&nbsp;a&nbsp;stationary environment, where the principal offers a&nbsp;time-invariant base payment, discretionary bonus, and fee every period to&nbsp;the agent.</p>
+              <a class="btn" href="monitoring-intensity-against-fees.html">read full article</a>
             </li>
           </ul>
         </div>
       </section>
       <section class="teaching" id="teaching">
         <div class="teaching__wrapper container">
-          <h2>Teaching Assistant</h2>
+          <h2>Teaching fellow</h2>
           <ul class="teaching__list">
             <li>
               <h3>Regional and urban economics, BA en Sciences Economiques</h3>
               <p>University of Luxembourg, Luxembourg, 2019 - 2023</p>
+              <svg aria-hidden="true" role="img" focusable="false" width="50" height="50" viewBox="0 0 32 32">
+                <use href="img/svg/sprite.svg#talk"></use>
+              </svg>
             </li>
             <li>
               <h3>Public economics, MA of Science in Finance and Economics</h3>
-              <p>University of Luxembourg, Luxembourg, 2019 - 2023</p>
+              <p>University of Luxembourg, Luxembourg, 2019 - 2022</p>
+              <svg aria-hidden="true" role="img" focusable="false" width="50" height="50" viewBox="0 0 32 32">
+                <use href="img/svg/sprite.svg#talk"></use>
+              </svg>
             </li>
             <li>
               <h3>Contemporary issues in Public Finance, MA of Science in Finance and Economics</h3>
-              <p>University of Luxembourg, Luxembourg, 2019 - 2023</p>
+              <p>University of Luxembourg, Luxembourg, 2022 - 2023</p>
+              <svg aria-hidden="true" role="img" focusable="false" width="50" height="50" viewBox="0 0 32 32">
+                <use href="img/svg/sprite.svg#talk"></use>
+              </svg>
             </li>
           </ul>
         </div>
@@ -137,43 +159,36 @@
     <footer class="footer" id="contacts">
       <div class="footer__wrapper container">
         <h2>Contacts</h2>
-        <div class="footer__logo">
-          <a href="#">ALENA PODANEVA'S PERSONAL SITE</a>
-            <picture>
-              <img src="img/svg/logo-footer.svg" width="215" height="55" alt="Logo Alena.">
-            </picture>
-          </a>
-        </div>
         <div class="footer__social">
-            <ul class="footer__list">
-              <li class="footer__list-item">
-                <a href="mailto:podaneva.alenaphd@gmail.com">podaneva.alenaphd@gmail.com</a>
-              </li>
-              <li class="footer__list-item">
-                <a href="tel:+352621961471">+352621961471</a>
-              </li>
-              <li class="footer__list-item">
-                <a href="https://www.linkedin.com/in/alena-podaneva/">
-                  <span class="visually-hidden">LinkedIn.</span>
-                  <svg aria-hidden="true" role="img" focusable="false" width="32" height="32">
-                    <use href="img/svg/linkedin.svg"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer__list-item">
-                <a href="https://twitter.com/PhDPodaneva">
-                  <span class="visually-hidden">Twitter.</span>
-                  <svg aria-hidden="true" role="img" focusable="false" width="32" height="32">
-                    <use href="img/svg/twitter.svg"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-        </div>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a href="mailto:podaneva.alenaphd@gmail.com">podaneva.alenaphd@gmail.com</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="https://www.linkedin.com/in/alena-podaneva/" aria-label="my linkedin" class="footer__icon">
+                <svg aria-hidden="true" role="img" focusable="false" width="32" height="32" viewBox="0 0 32 32">
+                  <use href="img/svg/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a href="https://twitter.com/PhDPodaneva" class="footer__icon" aria-label="my twitter">
+                <svg aria-hidden="true" role="img" focusable="false" width="32" height="32" viewBox="0 0 24 24">
+                  <use href="img/svg/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="footer__logo">
+            <a href="#">
+              <picture>
+                <img src="img/svg/footer-logo.svg" width="524" height="40" alt="Logo Alena.">
+              </picture>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
-    <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>

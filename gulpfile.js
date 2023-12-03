@@ -2,8 +2,8 @@ import gulp from 'gulp';
 import browserSync from 'browser-sync';
 import del from 'del';
 import {compileStyles, compileMinStyles} from './gulp/compileStyles.mjs';
-import { copy, copyImages, copySvg } from './gulp/copyAssets.mjs';
-import {compileMainMinScripts, compileMainScripts, compileVendorScripts} from './gulp/compileScripts.mjs';
+import { copy, copySvg, copyImages} from './gulp/copyAssets.mjs';
+import {compileMainMinScripts, compileMainScripts} from './gulp/compileScripts.mjs';
 import {optimizeSvg, sprite, createWebp, optimizePng, optimizeJpg} from './gulp/optimizeImages.mjs';
 
 const server = browserSync.create();
@@ -23,7 +23,7 @@ const syncServer = () => {
 
   gulp.watch('source/**.html', gulp.series(copy, refresh));
   gulp.watch('source/sass/**/*.{scss,sass}', streamStyles);
-  gulp.watch('source/js/**/*.{js,json}', gulp.series(compileMainScripts, compileVendorScripts, refresh));
+  gulp.watch('source/js/**/*.{js,json}', gulp.series(compileMainScripts, refresh));
   gulp.watch('source/data/**/*.{js,json}', gulp.series(copy, refresh));
   gulp.watch('source/img/**/*.svg', gulp.series(copySvg, sprite, refresh));
   gulp.watch('source/img/**/*.{png,jpg,webp}', gulp.series(copyImages, refresh));
@@ -39,8 +39,8 @@ const refresh = (done) => {
   done();
 };
 
-const build = gulp.series(clean, copy, sprite, gulp.parallel(compileMinStyles, compileMainMinScripts, compileVendorScripts, optimizePng, optimizeJpg, optimizeSvg));
-const dev = gulp.series(clean, copy, sprite, gulp.parallel(compileMinStyles, compileMainMinScripts, compileVendorScripts, optimizePng, optimizeJpg, optimizeSvg), syncServer);
-const start = gulp.series(clean, copy, sprite, gulp.parallel(compileStyles, compileMainScripts, compileVendorScripts), syncServer);
+const build = gulp.series(clean, copy, copyImages, copySvg, sprite, gulp.parallel(compileMinStyles, compileMainMinScripts, optimizePng, optimizeJpg, optimizeSvg));
+const dev = gulp.series(clean, copy, copyImages, copySvg, sprite, gulp.parallel(compileMinStyles, compileMainMinScripts, optimizePng, optimizeJpg, optimizeSvg), syncServer);
+const start = gulp.series(clean, copy, copyImages, copySvg, sprite, gulp.parallel(compileStyles, compileMainScripts), syncServer);
 
 export { createWebp as webp, build, start, dev};

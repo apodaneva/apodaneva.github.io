@@ -1,6 +1,23 @@
 .articles {
   scroll-margin-top: 68px;
   background-color: $color-white-smoke;
+
+  @include vp-767 {
+    scroll-margin-top: 0;
+  }
+
+  &--page {
+    background-color: $color-alice-blue;
+
+    h2 {
+      text-align: center;
+    }
+
+    p {
+      text-indent: 20px;
+      font-size: 20px;
+    }
+  }
 }
 
 .articles__wrapper {
@@ -29,9 +46,22 @@
 
   a {
     display: block;
-    width: 150px;
+    width: 250px;
     margin-left: auto;
     text-align: center;
+
+    @include vp-767 {
+      margin: 20px auto 0;
+    }
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  p {
+    padding: 10px;
+    margin: 0 0 11px 0;
   }
 }
 
@@ -60,27 +90,5 @@
     background-color: $color-alice-blue;
     color: $color-tangaroa;
     justify-content: center;
-  }
-}
-
-
-.articles__item-list {
-  padding: 0;
-  margin: 0;
-
-  h5 {
-    padding: 0;
-    margin: 0 0 2px 0;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 140%;
-  }
-
-  p {
-    padding: 0;
-    margin: 0 0 11px 0;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 140%;
   }
 }
