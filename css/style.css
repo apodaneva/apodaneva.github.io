@@ -1422,6 +1422,7 @@ a {
   .about__wrapper {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    gap: 0;
   }
 
   .education {
