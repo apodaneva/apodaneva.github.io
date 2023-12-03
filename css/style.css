@@ -438,7 +438,7 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: #f9fbfd;
 }
 
 main {
@@ -663,7 +663,7 @@ a {
 }
 
 .header {
-  background: #ffffff;
+  background: #f9fbfd;
   -webkit-box-shadow: 0 4px 4px rgba(240, 0, 172, 0.25);
   box-shadow: 0 4px 4px rgba(240, 0, 172, 0.25);
   position: sticky;
@@ -856,6 +856,8 @@ a {
 
 .education__list li {
   padding: 10px;
+  position: relative;
+  padding-left: 40px;
 }
 
 .education__list h3 {
@@ -866,6 +868,12 @@ a {
 .education__list p {
   padding: 0 0 0 20px;
   margin: 0;
+}
+
+.education__list svg {
+  position: absolute;
+  top: 15px;
+  left: -30px;
 }
 
 .articles {
@@ -956,20 +964,16 @@ a {
   margin: 0;
 }
 
-.articles__item-list h5 {
-  padding: 0;
-  margin: 0 0 2px 0;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 140%;
-}
-
 .articles__item-list p {
   padding: 0;
   margin: 0 0 11px 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
+}
+
+.articles__item h3 {
+  text-align: center;
 }
 
 .teaching {
@@ -994,6 +998,8 @@ a {
 
 .teaching__list li {
   padding: 10px;
+  position: relative;
+  padding-left: 40px;
 }
 
 .teaching__list h3 {
@@ -1004,6 +1010,12 @@ a {
 .teaching__list p {
   padding: 0 0 0 20px;
   margin: 0;
+}
+
+.teaching__list svg {
+  position: absolute;
+  top: 15px;
+  left: -30px;
 }
 
 .footer {
@@ -1029,9 +1041,9 @@ a {
 .footer__social {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 4fr;
-  grid-template-columns: 1fr 4fr;
-  gap: 50px;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  gap: 30px;
   -ms-grid-column-align: center;
   justify-self: center;
   width: 100%;
@@ -1047,17 +1059,11 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
   max-width: 524px;
   margin: 0 auto;
 }
 
 .footer__list {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1177,14 +1183,7 @@ a {
     gap: 30px;
   }
 
-  .footer__logo {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
-  }
-
   .footer__list {
-    grid-column: 1/-1;
     -ms-flex-pack: distribute;
     justify-content: space-around;
     -webkit-box-align: center;
