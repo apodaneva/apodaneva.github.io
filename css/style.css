@@ -821,13 +821,13 @@ a {
   color: #003eb7;
 }
 
-.about__biography a:last-child {
-  color: #000000;
-}
-
 .about__biography a:hover,
 .about__biography a:focus-within {
   color: #f200ae;
+}
+
+.about__biography .about__link {
+  color: #000000;
 }
 
 .education__wrapper {
