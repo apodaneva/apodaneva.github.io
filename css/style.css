@@ -931,7 +931,7 @@ a {
 
 .articles__item a {
   display: block;
-  width: 150px;
+  width: 250px;
   margin-left: auto;
   text-align: center;
 }
@@ -1183,6 +1183,14 @@ a {
   .header__list-item a {
     padding: 3px 10px;
     font-size: 14px;
+  }
+
+  .education__list svg {
+    top: 10px;
+  }
+
+  .teaching__list svg {
+    top: 10px;
   }
 
   .footer__social {
