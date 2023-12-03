@@ -1,11 +1,4 @@
 .articles {
-  scroll-margin-top: 68px;
-  background-color: $color-white-smoke;
-
-  @include vp-767 {
-    scroll-margin-top: 0;
-  }
-
   &--page {
     background-color: $color-alice-blue;
 
@@ -37,23 +30,11 @@
   scroll-margin-top: 68px;
   padding: 20px;
   margin-bottom: 10px;
-  background: $color-very-light-grey;
+  background-color: $color-white-smoke;
 
   &:hover,
   &:focus-within {
     background: $color-default-white;
-  }
-
-  a {
-    display: block;
-    width: 250px;
-    margin-left: auto;
-    text-align: center;
-
-    @include vp-767 {
-      margin: 20px auto 0;
-      width: 100%;
-    }
   }
 
   h3 {
@@ -66,30 +47,11 @@
   }
 }
 
-.articles__item-info {
+.articles__buttons {
   display: flex;
-  flex-direction: column;
-  flex: auto;
-  color: $color-alice-blue;
+  justify-content: space-around;
 
-  p {
-    padding: 0;
-    margin: 0 0 12px 0;
-    font-weight: 400;
-    word-wrap: break-word;
-  }
-
-  a {
-    visibility: visible;
-    outline-offset: -2px;
-    display: flex;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 150%;
-    padding: 9px 46px 10px 47px;
-    margin: 0;
-    background-color: $color-alice-blue;
-    color: $color-tangaroa;
-    justify-content: center;
+  @include vp-767 {
+    flex-direction: column;
   }
 }

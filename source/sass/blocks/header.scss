@@ -25,11 +25,9 @@
 }
 
 .header__logo {
-  min-width: 70px;
   margin: 0 20px 0 0;
 
   @include vp-1023 {
-    min-width: 38px;
     margin: 0 10px 0 0;
   }
 
