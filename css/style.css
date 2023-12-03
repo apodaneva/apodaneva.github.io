@@ -385,58 +385,18 @@ template {
 }
 
 @font-face {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-family: "";
-  font-display: swap;
-  src: url("../fonts/.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Roboto Condensed";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/roboto-condensed-300.woff2") format("woff2"), url("../fonts/roboto-condensed-300.woff") format("woff");
+  src: url("../fonts/montserrat-regular.woff2") format("woff2"), url("../fonts/montserrat-regular.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Roboto Condensed";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/roboto-condensed-400.woff2") format("woff2"), url("../fonts/roboto-condensed-400.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Roboto Condensed";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/roboto-condensed-700.woff2") format("woff2"), url("../fonts/roboto-condensed-700.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Alumni Sans";
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/alumni-sans-600.woff2") format("woff2"), url("../fonts/alumni-sans-600.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Alumni Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/alumni-sans-700.woff2") format("woff2"), url("../fonts/alumni-sans-700.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Alumni Sans";
-  font-style: normal;
-  font-weight: 800;
-  src: url("../fonts/alumni-sans-800.woff2") format("woff2"), url("../fonts/alumni-sans-800.woff") format("woff");
+  src: url("../fonts/montserrat-bold.woff2") format("woff2"), url("../fonts/montserrat-bold.woff") format("woff");
   font-display: swap;
 }
 
@@ -461,7 +421,7 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Roboto Condensed", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+  font-family: "Montserrat", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   color: #000000;
   min-width: 320px;
   scroll-behavior: smooth;
@@ -616,12 +576,13 @@ h2 {
   font-size: 28px;
   line-height: 150%;
   text-transform: uppercase;
+  border-bottom: 2px solid #f200ae;
 }
 
 h3 {
   padding: 0;
   margin: 10px 0;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 18px;
   line-height: 150%;
 }
@@ -653,7 +614,7 @@ a {
   padding: 10px 20px;
   color: #000000;
   background-color: rgba(255, 255, 255, 0);
-  border: 2px solid #000000;
+  border: 2px solid #f200ae;
   border-radius: 4px;
   cursor: pointer;
   -webkit-user-select: none;
@@ -662,7 +623,6 @@ a {
   user-select: none;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-  font-family: "Roboto Condensed", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
@@ -679,7 +639,7 @@ a {
 }
 
 .btn:hover {
-  background: linear-gradient(97.05deg, #ff1553 17.6%, #003eb7 95.31%);
+  border: 2px solid #000000;
 }
 
 .btn--dark {
@@ -691,9 +651,9 @@ a {
 }
 
 .header {
-  background: #f9fbfd;
-  -webkit-box-shadow: 0 4px 4px rgba(120, 188, 252, 0.25);
-  box-shadow: 0 4px 4px rgba(120, 188, 252, 0.25);
+  background: #ffffff;
+  -webkit-box-shadow: 0 4px 4px rgba(240, 0, 172, 0.25);
+  box-shadow: 0 4px 4px rgba(240, 0, 172, 0.25);
   position: sticky;
   z-index: 100;
   top: 0;
@@ -722,6 +682,7 @@ a {
   text-transform: uppercase;
   font-size: 24px;
   line-height: 125%;
+  font-weight: 700;
 }
 
 .header__nav {
@@ -777,13 +738,14 @@ a {
   text-transform: uppercase;
   padding: 9px 15px;
   margin: 0 2px;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 16px;
   line-height: 125%;
 }
 
-.header__list-item a:hover {
-  color: #78bcfc;
+.header__list-item a:hover,
+.header__list-item a:focus-within {
+  color: #f200ae;
 }
 
 .about {
@@ -846,7 +808,7 @@ a {
 
 .about__biography a:hover,
 .about__biography a:focus-within {
-  color: #78bcfc;
+  color: #f200ae;
 }
 
 .education {
@@ -1057,8 +1019,54 @@ a {
   justify-content: center;
 }
 
+.footer__social {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr;
+  grid-template-columns: 1fr 4fr;
+  -webkit-column-gap: 50px;
+  -moz-column-gap: 50px;
+  column-gap: 50px;
+  -ms-grid-row-align: center;
+  align-self: center;
+  width: 100%;
+}
+
+.footer__logo {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.footer__list {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: 1/2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .footer__list-item a {
-  color: #000000;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 700;
+}
+
+.footer__list-item a:hover,
+.footer__list-item a:focus-within {
+  color: #f200ae;
+}
+
+.footer__icon {
+  display: block;
+  width: 32px;
+  height: 32px;
 }
 
 /* @mixin hover-focus {
@@ -1146,6 +1154,10 @@ a {
     font-size: 14px;
     line-height: 122%;
   }
+
+  .footer__list-item a {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1213,5 +1225,9 @@ a {
     width: 100%;
     font-size: 18px;
     padding: 10px 8px 8px;
+  }
+
+  .footer__list-item a {
+    font-size: 14px;
   }
 }
