@@ -1,13 +1,21 @@
 .about {
   scroll-margin-top: 68px;
   background-color: $color-white-smoke;
-  // padding-top: 50px;
+
+  @include vp-767 {
+    scroll-margin-top: 0;
+  }
 }
 
 .about__wrapper {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 40px;
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
 }
 
 .about__photo {
@@ -34,11 +42,11 @@
 
   a {
     margin: 10px 0;
-    color: blue;
+    color: $color-cobalt;
 
     &:hover,
     &:focus-within {
-      color: $color-maya-blue;
+      color: $color-hollywood-cerise;
     }
   }
 }

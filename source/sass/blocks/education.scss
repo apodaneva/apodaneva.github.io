@@ -1,5 +1,9 @@
 .education {
   scroll-margin-top: 68px;
+
+  @include vp-767 {
+    scroll-margin-top: 0;
+  }
 }
 
 .education__wrapper {
@@ -19,7 +23,10 @@
 .education__list {
   li {
     padding: 10px;
+    position: relative;
+    padding-left: 40px;
   }
+
   h3 {
     padding: 0;
     margin: 0;
@@ -28,5 +35,19 @@
   p {
     padding: 0 0 0 20px;
     margin: 0;
+  }
+
+  svg {
+    position: absolute;
+    top: 15px;
+    left: -30px;
+
+    @include vp-1023 {
+      top: 10px;
+    }
+
+    @include vp-767 {
+      left: -10px;
+    }
   }
 }
