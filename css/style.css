@@ -591,6 +591,8 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
+  text-align: justify;
+  text-indent: 20px;
 }
 
 a {
@@ -668,6 +670,7 @@ a {
   box-shadow: 0 4px 4px rgba(240, 0, 172, 0.25);
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 .header__menu {
@@ -881,6 +884,19 @@ a {
   background-color: #f7f7f7;
 }
 
+.articles--page {
+  background-color: #f9fbfd;
+}
+
+.articles--page h2 {
+  text-align: center;
+}
+
+.articles--page p {
+  text-indent: 20px;
+  font-size: 20px;
+}
+
 .articles__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -920,6 +936,15 @@ a {
   text-align: center;
 }
 
+.articles__item h3 {
+  text-align: center;
+}
+
+.articles__item p {
+  padding: 10px;
+  margin: 0 0 11px 0;
+}
+
 .articles__item-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -957,23 +982,6 @@ a {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.articles__item-list {
-  padding: 0;
-  margin: 0;
-}
-
-.articles__item-list p {
-  padding: 0;
-  margin: 0 0 11px 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 140%;
-}
-
-.articles__item h3 {
-  text-align: center;
 }
 
 .teaching {
@@ -1426,6 +1434,10 @@ a {
     scroll-margin-top: 0;
   }
 
+  .education__list svg {
+    left: -10px;
+  }
+
   .articles {
     scroll-margin-top: 0;
   }
@@ -1436,6 +1448,10 @@ a {
 
   .teaching {
     scroll-margin-top: 0;
+  }
+
+  .teaching__list svg {
+    left: -10px;
   }
 
   .footer__list {
