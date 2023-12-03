@@ -818,6 +818,11 @@ a {
 
 .about__biography a {
   margin: 10px 0;
+  color: #003eb7;
+}
+
+.about__biography a:last-child {
+  color: #000000;
 }
 
 .about__biography a:hover,
