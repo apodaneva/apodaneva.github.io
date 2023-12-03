@@ -30,14 +30,9 @@
   justify-content: center;
   align-items: center;
 
-
   a {
     margin: 10px 0;
     color: $color-cobalt;
-
-    &:last-child {
-      color: $color-default-black;
-    }
 
     &:hover,
     &:focus-within {
@@ -45,4 +40,9 @@
     }
   }
 
+  .about__link {
+    color: $color-default-black;
+  }
 }
+
+
