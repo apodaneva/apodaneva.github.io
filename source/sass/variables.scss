@@ -2,12 +2,11 @@
 // ---------------------------------
 
 // Default
-
 $color-default-black:               #000000;
 $color-default-white:               #ffffff;
+
 $color-transparent:                 rgba(255, 255, 255, 0);
 $color-transparent-2:               rgba(240, 0, 172, 0.25);
-$color-transparent-4:               rgba(1, 28, 64, 0);
 
 // Project palette
 $color-neon-blue:                   #2c39f2;
@@ -19,12 +18,7 @@ $color-white-smoke:                 #f7f7f7;
 $color-very-light-grey:             #cccccc;
 $color-tangaroa:                    #011c40;
 
-// Gradient
 
-// Typography
-// ---------------------------------
-
-// переменная используемая в html для подключения скейлинга
 $fz-default:                        16px;
 
 // у некоторых шрифтов в ios возникают проблемы с символом рубля

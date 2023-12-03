@@ -2,7 +2,7 @@ import gulp from 'gulp';
 import browserSync from 'browser-sync';
 import del from 'del';
 import {compileStyles, compileMinStyles} from './gulp/compileStyles.mjs';
-import { copy, copySvg, copyImages} from './gulp/copyAssets.mjs';
+import {copy, copySvg, copyImages} from './gulp/copyAssets.mjs';
 import {compileMainMinScripts, compileMainScripts} from './gulp/compileScripts.mjs';
 import {optimizeSvg, sprite, createWebp, optimizePng, optimizeJpg} from './gulp/optimizeImages.mjs';
 
