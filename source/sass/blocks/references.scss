@@ -1,0 +1,47 @@
+.references__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.references__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+
+  @include vp-767 {
+    flex-direction: column;
+  }
+
+  li {
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h3 {
+    padding: 0;
+    margin: 0;
+  }
+
+  p {
+    padding: 0 0 0 20px;
+    margin: 0;
+  }
+
+  a {
+    margin: 10px 0;
+    color: $color-cobalt;
+
+    &:hover,
+    &:focus-within {
+      color: $color-hollywood-cerise;
+    }
+  }
+}

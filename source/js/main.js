@@ -35,19 +35,19 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // up button
   let backToTop = document.querySelector('[data-upbtn]');
-  backToTop.style.bottom = "-100px";
+  backToTop.style.bottom = '-100px';
 
-  window.addEventListener("scroll", function () {
+  window.addEventListener('scroll', function () {
     if (window.scrollY > 500) {
-      backToTop.style.bottom = "100px";
-      backToTop.style.display = "block";
+      backToTop.style.bottom = '100px';
+      backToTop.style.display = 'block';
     } else {
-      backToTop.style.bottom = "-100px";
+      backToTop.style.bottom = '-100px';
     }
   });
 
-  backToTop.addEventListener("click", function (event) {
+  backToTop.addEventListener('click', function (event) {
     event.preventDefault();
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({top: 0, behavior: 'smooth'});
   });
 });
