@@ -1,12 +1,3 @@
-.about {
-  scroll-margin-top: 68px;
-  background-color: $color-white-smoke;
-
-  @include vp-767 {
-    scroll-margin-top: 0;
-  }
-}
-
 .about__wrapper {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -39,7 +30,6 @@
   justify-content: center;
   align-items: center;
 
-
   a {
     margin: 10px 0;
     color: $color-cobalt;
@@ -49,4 +39,10 @@
       color: $color-hollywood-cerise;
     }
   }
+
+  .about__link {
+    color: $color-default-black;
+  }
 }
+
+

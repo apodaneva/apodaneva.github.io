@@ -1,11 +1,3 @@
-.teaching {
-  scroll-margin-top: 68px;
-
-  @include vp-767 {
-    scroll-margin-top: 0;
-  }
-}
-
 .teaching__wrapper {
   display: flex;
   flex-direction: column;
@@ -18,6 +10,28 @@
     padding: 10px;
     position: relative;
     padding-left: 40px;
+
+    &::before {
+      display: block;
+      content: "";
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      background-image: url("../img/svg/teaching.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 25px;
+      left: -30px;
+      top: 0;
+
+      @include vp-1023 {
+        left: -20px;
+      }
+
+      @include vp-767 {
+        left: -10px;
+      }
+    }
   }
 
   h3 {
@@ -28,19 +42,5 @@
   p {
     padding: 0 0 0 20px;
     margin: 0;
-  }
-
-  svg {
-    position: absolute;
-    top: 15px;
-    left: -30px;
-
-    @include vp-1023 {
-      top: 10px;
-    }
-
-    @include vp-767 {
-      left: -10px;
-    }
   }
 }
