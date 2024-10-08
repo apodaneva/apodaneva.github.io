@@ -1,0 +1,13 @@
+.main {
+  section:nth-child(2n+1) {
+    background-color: $color-white-smoke;
+  }
+
+  section:nth-child(n) {
+    scroll-margin-top: 68px;
+
+    @include vp-767 {
+      scroll-margin-top: 0;
+    }
+  }
+}
