@@ -918,14 +918,13 @@ a {
 
 .articles__list {
   margin: 0;
-  padding: 20px;
   width: 100%;
   row-gap: 30px;
 }
 
 .articles__item {
   scroll-margin-top: 68px;
-  padding: 20px;
+  padding: 20px 0;
   margin-bottom: 10px;
   background-color: #f7f7f7;
 }
@@ -940,7 +939,7 @@ a {
 }
 
 .articles__item p {
-  padding: 10px;
+  padding: 10px 20px;
   margin: 0 0 11px 0;
 }
 
