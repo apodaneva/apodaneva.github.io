@@ -35,16 +35,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 
   @include vp-1023 {
     justify-content: space-around;
-    align-items: center;
   }
 
   @include vp-767 {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 }
 
